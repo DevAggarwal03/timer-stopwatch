@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>watch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="btn">
+            <button class="modeBtn" id="stopWatchBtn">StopWatch</button>
+            <button class="modeBtn" id="timerBtn">Timer</button>
+        </div>
+        <div class="time">
+            <h1 id="timeDis">
+                00:00:00:00
+            </h1>
+        </div>
+        <div class="Sbtn">
+            <div class="wrapper">
+                <button class="sBtn" onclick="start()" id="startBtn">Start</button>
+                <button class="sBtn" onclick="stop()" id="stopBtn">stop</button>
+                <button class="sBtn" onclick="reset()" id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: url(./pics/wolfgang-hasselmann-DgnrcP52p3A-unsplash.jpg);
+    background-size: cover;
+    align-items: center;
+}
+.container{
+    height: 75%;
+    width: 75%;
+    border-radius: 154px;
+    box-shadow: 0 8px 30px 0px rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px );
+
+}
+.container .btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 19%;
+}
+.btn button{
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 9px;
+    border: none;
+    background-color: rgba(222, 150, 150, 0.617);
+}
+@media(max-width: 555px){
+    .container{
+        height: 80%;
+        width: 80%;
+    }
+    .container .btn{
+        margin-top: 24%;
+        flex-direction: column;
+    }
+    .modeBtn{
+        width: 150px;
+        align-self: center;
+        margin-bottom: 3px;
+    }
+    #resetBtn{
+        margin-bottom: 10px;
+    }
+}
+.modeBtn:hover{
+    background-color: hsla(0, 52%, 73%, 0.717);
+}
+.modeBtn:active{
+    background-color: rgba(222, 150, 150, 0.817);
+}
+.time{
+    text-align: center;
+    margin-top: 80px;
+}
+.time h1{
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.733);
+}
+.time h1 span{
+    font-size: 0.8em;
+}
+.container .Sbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 08%;
+}
+.Sbtn .wrapper{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+@media(max-width: 444px){
+    .container .Sbtn .wrapper{
+        flex-direction: column;
+    }
+    .wrapper #stopBtn{
+        margin-bottom: 5px;
+    }
+}
+.Sbtn .wrapper .sBtn{
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    background-color: hsla(0, 52%, 73%, 0.617);
+}
+#stopBtn:hover{
+    background-color: hsla(0, 52%, 73%, 0.717);
+}
+#stopBtn:active{
+    background-color: hsla(0, 52%, 73%, 0.817);
+}
+#startBtn:hover{
+    background-color: hsla(0, 52%, 73%, 0.717);
+}
+#startBtn:active{
+    background-color: hsla(0, 52%, 73%, 0.817);
+}
+#resetBtn:hover{
+    background-color: hsla(0, 52%, 73%, 0.717);
+}
+#resetBtn:active{
+    background-color: hsla(0, 52%, 73%, 0.817);
+}
